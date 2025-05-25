@@ -24,7 +24,7 @@ A placa Arduino Uno WiFi combina o microcontrolador ATmega328P com o módulo Wi-
 
 ![Placa Arduino Uno WiFi (ATmega328P + ESP8266)](Assets/Arduino.jpg) 
 
-#### Especificações:
+#### Especificações Arduino Uno WiFi (ATmega328P + ESP8266):
 
 - Modelo: Placa Uno Wifi Atmega328P;
 - Alimentação Jack P4: 6-9VDC;
@@ -52,7 +52,7 @@ O sensor de pH PH-4502C é utilizado para medir o nível de acidez ou alcalinida
 
 Neste projeto, o sensor é o responsável pela coleta do valor de pH da água, enviando os dados ao ATmega328P, que realiza a conversão e posterior transmissão ao módulo ESP8266 para exibição e monitoramento via MQTT.
 
-#### Especificações:
+#### Especificações PH-4502C:
 
 - Modelo: PH-4502C;
 - Tensão de aquecimento: 5 ±0.2V (AC/DC);
@@ -72,3 +72,26 @@ Neste projeto, o sensor é o responsável pela coleta do valor de pH da água, e
 - Dimensões do sensor (CxD): 170x12,5mm;
 - Peso: 75g;
 - Peso com embalagem: 85g.
+
+### C) Display LCD 16x2 com Interface I2C
+
+![Display LCD 16x2 com Interface I2C](Imagens/DisplayLCD.jpg) 
+
+O display LCD 16x2 com interface I2C é utilizado neste projeto para exibição local das medições realizadas pelo sensor, como o valor de pH da água e a condição atual ("Própria" ou "Imprópria"). Sua integração com o ESP8266 via barramento I2C (utilizando apenas os pinos SDA e SCL) permite uma comunicação eficiente com o microcontrolador, economizando pinos digitais para outras conexões.
+
+Além disso, o módulo conta com retroiluminação azul, caracteres brancos e ajuste de contraste via potenciômetro integrado, o que garante boa visualização em ambientes com pouca luz, mesmo quando o sistema estiver sem conexão com o servidor.
+
+#### Especificações LCD 16x2 I2C:
+
+- Modelo: DFR0063
+- Tipo de Display: Alfanumérico (16 caracteres por 2 linhas)
+- Controlador: HD44780
+- Interface de Comunicação: I2C (TWI)
+- Tensão de Operação: 5V DC
+- Corrente de Operação: ≤60mA
+- Endereço I2C padrão: 0x20 (configurável entre 0x20 e 0x27)
+- Pinos de Conexão: VCC (5V), GND, SDA (dados), SCL (clock)
+- Ajuste de Contraste: Potenciômetro integrado
+- Retroiluminação: LED azul com caracteres brancos
+- Dimensões: 80 x 36 x 20 mm
+- Compatibilidade: Arduino UNO, Mega, Nano e similares
