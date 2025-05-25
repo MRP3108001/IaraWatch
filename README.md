@@ -232,15 +232,15 @@ Essa estrutura de comunicação MQTT contribuiu diretamente para a escalabilidad
 
 ![Conexão Fonte P4](Imagens/Img1.jpg)
 
-1.Conecte a fonte bivolt 9V 1A Plug P4 na entrada P4 fêmea da placa Arduino Uno WiFi.
+1. Conecte a fonte bivolt 9V 1A Plug P4 na entrada P4 fêmea da placa Arduino Uno WiFi.
 
-2.Com dois jumpers macho-macho (um vermelho e um azul):
+2. Com dois jumpers macho-macho (um vermelho e um azul):
 
  - Conecte o pino 5V do Arduino ao barramento positivo da protoboard (linha vermelha).
 
  - Conecte o pino GND do Arduino ao barramento negativo da protoboard (linha azul/preta).
 
-3.Isso garante que a protoboard esteja alimentada com os mesmos 5V do Arduino.
+3. Isso garante que a protoboard esteja alimentada com os mesmos 5V do Arduino.
 
 ___
 
@@ -248,9 +248,9 @@ ___
 
 ![Configuração das chaves DIP](Imagens/Img2.jpg)
 
-1.Use um palito ou objeto fino para ajustar as chaves DIP da placa.
+1. Use um palito ou objeto fino para ajustar as chaves DIP da placa.
 
-2.Ative apenas as chaves 1 e 2 (na posição ON). As demais devem ficar OFF.
+2. Ative apenas as chaves 1 e 2 (na posição ON). As demais devem ficar OFF.
 
 - Isso configura a comunicação ATmega328P ⇄ ESP8266 via serial.
 
@@ -258,7 +258,7 @@ ___
 
 ### 📟 **Etapa 3 – Conexão do display LCD 16x2 I2C**
 
-1.Pegue dois jumpers fêmea-fêmea e conecte:
+1. Pegue dois jumpers fêmea-fêmea e conecte:
 
 ![Conexão GPIO4 e SDA/GPIO2 e SCL](Imagens/Img3.jpg)
 
@@ -266,7 +266,7 @@ ___
 
 - GPIO2 do ESP8266 → pino SCL do display.
 
-2.Pegue dois jumpers fêmea-macho e conecte:
+2. Pegue dois jumpers fêmea-macho e conecte:
 
 ![Conexão VCC e GND](Imagens/Img4.jpg)
 
@@ -274,7 +274,15 @@ ___
 
 - GND do display ao barramento negativo da protoboard.
 
-3.O display agora estará energizado e se comunicará via I2C com o ESP.
+3. O display agora estará energizado e se comunicará via I2C com o ESP.
 
 ![LCD Conectado a ESP e Protoboard](Imagens/Img5.jpg)
 ___
+
+###💡 **Etapa 4 – Conexão e validação do atuador LED**
+
+1. Conecte o ânodo (perna longa) do LED ao pino digital D9 do Arduino.
+
+2. Conecte o cátodo (perna curta) ao barramento negativo da protoboard com um jumper fêmea-macho.
+
+3. Com a programação carregada e o pH fora da faixa, o LED deve começar a piscar.
