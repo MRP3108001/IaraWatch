@@ -234,9 +234,9 @@ Essa estrutura de comunicação MQTT contribuiu diretamente para a escalabilidad
 
 2. Com dois jumpers macho-macho (um vermelho e um azul):
 
-  - Conecte o pino 5V do Arduino ao barramento positivo da protoboard (linha vermelha).
+  - - Conecte o pino 5V do Arduino ao barramento positivo da protoboard (linha vermelha).
 
-  - Conecte o pino GND do Arduino ao barramento negativo da protoboard (linha azul/preta).
+  - - Conecte o pino GND do Arduino ao barramento negativo da protoboard (linha azul/preta).
 
 3. Isso garante que a protoboard esteja alimentada com os mesmos 5V do Arduino.
 
