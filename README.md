@@ -16,7 +16,7 @@ Os dados enviados incluem:
 
 Este projeto foi pensado para ser acessível, modular e didático, permitindo que estudantes, pesquisadores ou entusiastas em automação e IoT possam reproduzi-lo com facilidade utilizando componentes comuns e de baixo custo.
 
-## Hardware e Itens Utilizados:
+## Hardware e Itens Auxiliares Utilizados:
 
 ### A) Placa Arduino Uno WiFi (ATmega328P + ESP8266)
 
@@ -190,5 +190,38 @@ Neste projeto, a fonte é conectada diretamente à porta fêmea P4 da placa Ardu
 - Dimensões: 75mm (C) x 28mm (L) x 78mm (A)
 - Peso: 61g
 
+## Software IDE e Broker MQTT:
 
+### Arduino IDE
 
+![Arduino IDE](Imagens/ArduinoIDE.jpg)
+
+Para o desenvolvimento do firmware embarcado, foi utilizada a Arduino IDE, uma plataforma robusta e amplamente adotada no ecossistema maker e educacional. Com suporte à linguagem C/C++ e integração nativa com placas baseadas no microcontrolador ATmega328P, a IDE permitiu:
+
+- A escrita e organização dos códigos-fonte;
+
+- A utilização de bibliotecas específicas para sensores, módulos de comunicação (como o ESP8266), controle de periféricos e displays LCD;
+
+- A compilação e envio (upload) dos programas diretamente para o microcontrolador da placa, via porta serial;
+
+- O monitoramento do comportamento do sistema por meio do Monitor Serial embutido na IDE.
+
+Essa interface simplificada e compatível com múltiplos sistemas operacionais (Windows, macOS e Linux) contribuiu para uma experiência de desenvolvimento fluida e confiável durante todas as etapas do projeto.
+
+### Mosquitto Broker MQTT
+
+![Mosquitto Broker MQTT](Imagens/MosquittoBrokerMQTT.jpg)
+
+Para a comunicação entre o módulo ESP8266 e os sistemas de monitoramento, foi utilizado o Mosquitto, um broker MQTT leve, gratuito e de código aberto.
+
+Instalado localmente no computador, o Mosquitto foi responsável por:
+
+- Gerenciar os tópicos de publicação e assinatura MQTT;
+
+- Receber dados periódicos enviados pelo ESP8266;
+
+- Encaminhar os dados aos clientes assinantes (por exemplo, scripts Python e comandos via terminal).
+
+A configuração envolveu definir a porta padrão 1883, criar um tópico principal (pH/valor) e validar os envios por meio de ferramentas como mosquitto_sub, garantindo assim um canal de comunicação eficiente e confiável para o monitoramento dos parâmetros do sistema em tempo real.
+
+Essa estrutura de comunicação MQTT contribuiu diretamente para a escalabilidade e a reatividade do projeto IaraWatch.
