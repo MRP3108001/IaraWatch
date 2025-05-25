@@ -245,4 +245,10 @@ Essa estrutura de comunicação MQTT contribuiu diretamente para a escalabilidad
 
 ### 🔧 Etapa 2 – Configuração das chaves DIP
 
+![Configuração das chaves DIP](Imagens/Img2.jpg)
 
+1. Use um palito ou objeto fino para ajustar as chaves DIP da placa.
+
+2. Ative apenas as chaves 1 e 2 (na posição ON). As demais devem ficar OFF.
+
+- Isso configura a comunicação ATmega328P ⇄ ESP8266 via serial.
