@@ -315,8 +315,6 @@ ___
 
 O sistema conecta-se a uma rede Wi-Fi local e estabelece comunicação com um servidor MQTT local (Mosquitto) utilizando o protocolo **MQTT sobre TCP/IP**.
 
-![Conexão Fonte P4](Imagens/Img1.jpg)
-
 A estrutura garante:
 - Monitoramento remoto dos valores de pH
 - Registro dos dados em tempo real
@@ -325,8 +323,16 @@ A estrutura garante:
 A comunicação acontece via:
 
 - **Protocolo TCP/IP**: entre ESP8266 e o broker
+  
+![Protocolo TCP/IP1](Imagens/Img12.jpg)
+
+![Protocolo TCP/IP2](Imagens/Img13.jpg)
+
 - **Protocolo MQTT**: para envio leve de mensagens usando o padrão Pub/Sub
 
+![Protocolo MQTT](Imagens/Img14.jpg)
+
+![Protocolo MQTT](Imagens/Img15.jpg)
 ___
 
 ## **Montar Componentes Físicos:**
