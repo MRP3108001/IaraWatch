@@ -234,13 +234,13 @@ Essa estrutura de comunicação MQTT contribuiu diretamente para a escalabilidad
 
 1. Conecte a fonte bivolt 9V 1A Plug P4 na entrada P4 fêmea da placa Arduino Uno WiFi.
 
-2. Com dois jumpers macho-macho (um vermelho e um azul):
+2.Com dois jumpers macho-macho (um vermelho e um azul):
 
  - Conecte o pino 5V do Arduino ao barramento positivo da protoboard (linha vermelha).
 
  - Conecte o pino GND do Arduino ao barramento negativo da protoboard (linha azul/preta).
 
-3. Isso garante que a protoboard esteja alimentada com os mesmos 5V do Arduino.
+3.Isso garante que a protoboard esteja alimentada com os mesmos 5V do Arduino.
 
 ___
 
@@ -248,8 +248,28 @@ ___
 
 ![Configuração das chaves DIP](Imagens/Img2.jpg)
 
-1. Use um palito ou objeto fino para ajustar as chaves DIP da placa.
+1.Use um palito ou objeto fino para ajustar as chaves DIP da placa.
 
-2. Ative apenas as chaves 1 e 2 (na posição ON). As demais devem ficar OFF.
+2.Ative apenas as chaves 1 e 2 (na posição ON). As demais devem ficar OFF.
 
 - Isso configura a comunicação ATmega328P ⇄ ESP8266 via serial.
+
+___
+
+### 📟 **Etapa 3 – Conexão do display LCD 16x2 I2C**
+
+![Configuração das chaves DIP](Imagens/Img2.jpg)
+
+1.Pegue dois jumpers fêmea-fêmea e conecte:
+
+GPIO4 do ESP8266 → pino SDA do display.
+
+GPIO2 do ESP8266 → pino SCL do display.
+
+2.Pegue dois jumpers fêmea-macho e conecte:
+
+VCC do display ao barramento positivo da protoboard.
+
+GND do display ao barramento negativo da protoboard.
+
+3.O display agora estará energizado e se comunicará via I2C com o ESP.
