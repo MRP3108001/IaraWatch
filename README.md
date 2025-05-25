@@ -170,7 +170,7 @@ Composição utilizada no projeto:
 
 ### G) Fonte Bivolt 100–240V 9V 1A Plug P4
 
-![Fonte Bivolt 100–240V 9V 1A Plug P4](Imagens/FonteP4.jpg)
+![Fonte Bivolt 100–240V 9V 1A Plug P4](Imagens/Fonte_P4.jpg)
 
 A Fonte Bivolt 9V 1A com plug P4 é utilizada no projeto como a principal responsável por fornecer energia à placa Arduino UNO R3. Por ser compatível com tensões de entrada entre 100V e 240V, pode ser utilizada em diferentes localidades sem a necessidade de chaveamento manual.
 
