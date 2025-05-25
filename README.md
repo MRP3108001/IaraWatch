@@ -96,10 +96,26 @@ Além disso, o módulo conta com retroiluminação azul, caracteres brancos e aj
 - Dimensões: 80 x 36 x 20 mm
 - Compatibilidade: Arduino UNO, Mega, Nano e similares
 
-### C) Protoboard
+### D) Protoboard
 
-![Protoboard 720 pontos](Imagens/DisplayLCD.jpg)
+![Protoboard 400 pontos](Imagens/Protoboard.jpg)
 
 A protoboard é amplamente utilizada na fase de prototipagem do projeto, permitindo a montagem dos circuitos sem necessidade de solda. Isso facilita o teste, ajuste e organização dos componentes como sensores, atuadores, jumpers e o microcontrolador.
 
 Sua estrutura conta com trilhas verticais e horizontais, barramentos laterais de alimentação (positiva e negativa) e furos que suportam cabos jumper padrão. No projeto, ela é responsável por distribuir a alimentação fornecida pelo Arduino para o display, sensor de pH e LED, de maneira modular e segura.
+
+#### Especificações Técnicas:
+
+- Protoboard 400 Pontos Solderless Breadboard
+- Modelo: Solderless Breadboard
+- Marca: OEM
+- Ideal para protótipos de circuitos eletrônicos para futuros projetos
+- Base adesivada
+- Furo padrão 0.8mm
+- Corrente máxima: 5A
+- Tensão máxima: 300V
+- Cor: Branco
+- Composição: ABS
+- Origem: China
+- Tamanho: 82mm Comprimento x 55mm Largura x 10mm de Altura
+- Peso: 43g
