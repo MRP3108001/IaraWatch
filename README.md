@@ -168,3 +168,27 @@ Composição utilizada no projeto:
 - Tipos inclusos: fêmea x fêmea, macho x fêmea, macho x macho
 - Aplicação: Compatíveis com Arduino, ESP8266, sensores e módulos
 
+### G) Fonte Bivolt 100–240V 9V 1A Plug P4
+
+![Fonte Bivolt 100–240V 9V 1A Plug P4](Imagens/FonteP4.jpg)
+
+A Fonte Bivolt 9V 1A com plug P4 é utilizada no projeto como a principal responsável por fornecer energia à placa Arduino UNO R3. Por ser compatível com tensões de entrada entre 100V e 240V, pode ser utilizada em diferentes localidades sem a necessidade de chaveamento manual.
+
+Neste projeto, a fonte é conectada diretamente à porta fêmea P4 da placa Arduino, garantindo uma alimentação estável e contínua para todos os componentes conectados à protoboard por meio do microcontrolador.
+
+#### Especificações da Fonte Bivolt 100–240V 9V 1A Plug P4:
+
+- Modelo: KDL-121000
+- Tipo: AC/DC
+- Entrada: 100–240V AC (50/60Hz) – 0.3A
+- Saída: 9V DC – 1A
+- Plug: P4 (5,5mm externo / 2,1mm interno)
+- Pino Central: Positivo
+- Comprimento do cabo: 85 cm
+- Indicador LED de funcionamento: Sim
+- Material: Metal / Termoplástico / Componentes Eletrônicos
+- Dimensões: 75mm (C) x 28mm (L) x 78mm (A)
+- Peso: 61g
+
+
+
