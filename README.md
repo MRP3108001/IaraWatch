@@ -232,11 +232,15 @@ Essa estrutura de comunicação MQTT contribuiu diretamente para a escalabilidad
 
 1. Conecte a fonte bivolt 9V 1A Plug P4 na entrada P4 fêmea da placa Arduino Uno WiFi.
 
+![Conexão Fonte P4](Imagens/Img1.jpg)
+
 2. Com dois jumpers macho-macho (um vermelho e um azul):
 
  - Conecte o pino 5V do Arduino ao barramento positivo da protoboard (linha vermelha).
 
  - Conecte o pino GND do Arduino ao barramento negativo da protoboard (linha azul/preta).
+
+![Conexão Jumpers](Imagens/Img2.jpg)
 
 3. Isso garante que a protoboard esteja alimentada com os mesmos 5V do Arduino.
 
