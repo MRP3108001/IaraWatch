@@ -104,7 +104,7 @@ A protoboard é amplamente utilizada na fase de prototipagem do projeto, permiti
 
 Sua estrutura conta com trilhas verticais e horizontais, barramentos laterais de alimentação (positiva e negativa) e furos que suportam cabos jumper padrão. No projeto, ela é responsável por distribuir a alimentação fornecida pelo Arduino para o display, sensor de pH e LED, de maneira modular e segura.
 
-#### Especificações Técnicas:
+#### Especificações Técnicas Protoboard 400 Pontos:
 
 - Protoboard 400 Pontos Solderless Breadboard
 - Modelo: Solderless Breadboard
@@ -119,3 +119,21 @@ Sua estrutura conta com trilhas verticais e horizontais, barramentos laterais de
 - Origem: China
 - Tamanho: 82mm Comprimento x 55mm Largura x 10mm de Altura
 - Peso: 43g
+
+### E) LED Difuso 5mm
+
+![Protoboard 400 pontos](Imagens/LED.jpg)
+
+O LED difuso de 5mm é utilizado como atuador visual no projeto. Ele acende sempre que o valor de pH sai da faixa considerada segura, indicando uma condição de alerta. É conectado ao pino digital D9 do ATmega328P e tem seu brilho controlado por meio de sinal PWM.
+
+Este componente torna visível e imediata a resposta do sistema às medições do sensor de pH, sendo essencial para testes de tempo de reação e validação do funcionamento do atuador.
+
+#### Especificações Técnicas do LED Difuso 5mm:
+
+- Tamanho: 5 mm
+- Tensão de operação: 2.0 ~ 2.21 V
+- Corrente típica: 20 mA
+- Intensidade luminosa: 1000 mcd
+- Vida útil: 50.000 horas
+- Ângulo de abertura: 120°
+- Cor: Vermelho difuso
