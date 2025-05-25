@@ -24,7 +24,7 @@ A placa Arduino Uno WiFi combina o microcontrolador ATmega328P com o módulo Wi-
 
 ![Placa Arduino Uno WiFi (ATmega328P + ESP8266)](Assets/Arduino.jpg) 
 
-Especificações:
+#### Especificações:
 
 - Modelo: Placa Uno Wifi Atmega328P;
 - Alimentação Jack P4: 6-9VDC;
@@ -51,3 +51,24 @@ Especificações:
 O sensor de pH PH-4502C é utilizado para medir o nível de acidez ou alcalinidade de soluções líquidas, convertendo o valor de pH em um sinal analógico compreendido pelo microcontrolador. Ele opera com tensão de 5V DC, possui faixa de medição entre pH 0 e 14, tempo de resposta ≤5s e precisão de ±0,1 pH a 25°C. O módulo acompanha dois potenciômetros integrados: um para ajuste de offset (calibração) e outro para definir o limite de pH de atuação.
 
 Neste projeto, o sensor é o responsável pela coleta do valor de pH da água, enviando os dados ao ATmega328P, que realiza a conversão e posterior transmissão ao módulo ESP8266 para exibição e monitoramento via MQTT.
+
+#### Especificações:
+
+- Modelo: PH-4502C;
+- Tensão de aquecimento: 5 ±0.2V (AC/DC);
+- Corrente de trabalho: 5-10mA;
+- Faixa de temperatura: 0-60℃;
+- Tempo de resposta: 5S;
+- Tempo de sedimentação: 60S;
+- Componente Potência: 0,5 W;
+- Saída: Analógica;
+- Faixa de medição: 0,00 ~ 14,00 pH
+- Zero pontos: 7 +-0.5ph;
+- Erro alcalino: 0.2pH;
+- Resistência interna: <250MOhm;
+- Blocos de terminais: Plug BNC;
+- Comprimento do cabo: 70cm;
+- Dimensões do módulo (CxLxE): 42x32x13mm (ignorando-se conectores);
+- Dimensões do sensor (CxD): 170x12,5mm;
+- Peso: 75g;
+- Peso com embalagem: 85g.
