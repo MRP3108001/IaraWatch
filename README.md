@@ -95,3 +95,11 @@ Além disso, o módulo conta com retroiluminação azul, caracteres brancos e aj
 - Retroiluminação: LED azul com caracteres brancos
 - Dimensões: 80 x 36 x 20 mm
 - Compatibilidade: Arduino UNO, Mega, Nano e similares
+
+### C) Protoboard
+
+![Protoboard 720 pontos](Imagens/DisplayLCD.jpg)
+
+A protoboard é amplamente utilizada na fase de prototipagem do projeto, permitindo a montagem dos circuitos sem necessidade de solda. Isso facilita o teste, ajuste e organização dos componentes como sensores, atuadores, jumpers e o microcontrolador.
+
+Sua estrutura conta com trilhas verticais e horizontais, barramentos laterais de alimentação (positiva e negativa) e furos que suportam cabos jumper padrão. No projeto, ela é responsável por distribuir a alimentação fornecida pelo Arduino para o display, sensor de pH e LED, de maneira modular e segura.
