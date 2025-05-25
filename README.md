@@ -16,7 +16,7 @@ Os dados enviados incluem:
 
 Este projeto foi pensado para ser acessível, modular e didático, permitindo que estudantes, pesquisadores ou entusiastas em automação e IoT possam reproduzi-lo com facilidade utilizando componentes comuns e de baixo custo.
 
-Hardware utilizado:
+## Hardware utilizado:
 
 A) Placa Arduino Uno WiFi (ATmega328P + ESP8266)
 
