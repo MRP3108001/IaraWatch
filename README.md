@@ -289,3 +289,27 @@ ___
 
 4. Com a programação carregada e o pH fora da faixa, o LED deve começar a piscar.
 
+![Atuador LED - Catodo](Imagens/Img7.jpg)
+
+___
+
+### ** Etapa 5 – Conexão do sensor de pH PH-4502C**
+
+1. Utilize três jumpers fêmea-macho:
+
+- VCC do sensor → barramento positivo.
+
+- GND do sensor → barramento negativo.
+
+- Saída analógica (Po) do sensor → pino A0 do Arduino.
+
+![Sensor pH](Imagens/Img8.jpg)
+
+2. Conecte a sonda de vidro ao módulo via conector BNC.
+
+![Sensor pH - Plug BNC](Imagens/Img10.jpg)
+
+4. O sensor está pronto para medir e enviar valores de pH ao Arduino.
+
+![Sensor pH - Conexão Concluída](Imagens/Img11.jpg)
+
