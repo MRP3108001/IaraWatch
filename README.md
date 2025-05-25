@@ -16,6 +16,8 @@ Os dados enviados incluem:
 
 Este projeto foi pensado para ser acessível, modular e didático, permitindo que estudantes, pesquisadores ou entusiastas em automação e IoT possam reproduzi-lo com facilidade utilizando componentes comuns e de baixo custo.
 
+___
+
 ## **Hardware e Itens Auxiliares Utilizados:**
 
 ### **A) Placa Arduino Uno WiFi (ATmega328P + ESP8266)**
@@ -225,6 +227,7 @@ Instalado localmente no computador, o Mosquitto foi responsável por:
 A configuração envolveu definir a porta padrão 1883, criar um tópico principal (pH/valor) e validar os envios por meio de ferramentas como mosquitto_sub, garantindo assim um canal de comunicação eficiente e confiável para o monitoramento dos parâmetros do sistema em tempo real.
 
 Essa estrutura de comunicação MQTT contribuiu diretamente para a escalabilidade e a reatividade do projeto IaraWatch.
+___
 
 ## **Montar Componentes Físicos:**
 
