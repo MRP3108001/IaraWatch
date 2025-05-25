@@ -192,6 +192,8 @@ Neste projeto, a fonte é conectada diretamente à porta fêmea P4 da placa Ardu
 - Dimensões: 75mm (C) x 28mm (L) x 78mm (A)
 - Peso: 61g
 
+___
+
 ## **Software IDE e Broker MQTT:**
 
 ### **Arduino IDE**
@@ -227,6 +229,34 @@ Instalado localmente no computador, o Mosquitto foi responsável por:
 A configuração envolveu definir a porta padrão 1883, criar um tópico principal (pH/valor) e validar os envios por meio de ferramentas como mosquitto_sub, garantindo assim um canal de comunicação eficiente e confiável para o monitoramento dos parâmetros do sistema em tempo real.
 
 Essa estrutura de comunicação MQTT contribuiu diretamente para a escalabilidade e a reatividade do projeto IaraWatch.
+___
+
+## Código Desenvolvido
+
+### 📂 `ATMega_Code.ino`
+Código embarcado para o ATmega328P. Responsável por:
+- Ler o valor do sensor de pH (PH-4502C)
+- Realizar a conversão analógica para pH
+- Controlar o atuador (LED)
+- Enviar dados ao ESP8266 via comunicação serial
+
+### 📂 `ESP_MQTT.ino`
+Firmware do ESP8266 que:
+- Conecta-se ao Wi-Fi
+- Recebe dados do ATmega via serial
+- Publica as informações no Broker MQTT
+- Exibe informações no display LCD I2C
+
+### 📂 `monitorar_ph.py` (Deve ser adaptado conforme diretório ao qual salvar esse arquivo)
+Script Python para:
+- Escutar as publicações MQTT
+- Calcular tempo de resposta do LED e tempo de envio via MQTT
+- Exibir os dados em tempo real e calcular médias
+
+### 📂 `start_mosquitto_monitoramento.bat` (Deve ser adaptado conforme diretório ao qual salvar esse arquivo)
+Arquivo `.bat` que:
+- Inicia o broker Mosquitto
+- Executa o script `monitorar_ph.py`
 ___
 
 ## **Montar Componentes Físicos:**
