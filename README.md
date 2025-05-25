@@ -46,7 +46,7 @@ Especificações:
 
 ### B) Sensor de pH PH-4502C
 
-![Placa Arduino Uno WiFi (ATmega328P + ESP8266)](Assets/Arduino.jpg) 
+![Sensor PH-4502C](Imagens/PH-4502C.jpg) 
 
 O sensor de pH PH-4502C é utilizado para medir o nível de acidez ou alcalinidade de soluções líquidas, convertendo o valor de pH em um sinal analógico compreendido pelo microcontrolador. Ele opera com tensão de 5V DC, possui faixa de medição entre pH 0 e 14, tempo de resposta ≤5s e precisão de ±0,1 pH a 25°C. O módulo acompanha dois potenciômetros integrados: um para ajuste de offset (calibração) e outro para definir o limite de pH de atuação.
 
