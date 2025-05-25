@@ -283,8 +283,9 @@ ___
 
 1. Conecte o ânodo (perna longa) do LED ao pino digital D9 do Arduino.
 
-2. Conecte o cátodo (perna curta) ao barramento negativo da protoboard com um jumper fêmea-macho.
+![Atuador LED - Anodo](Imagens/Img9.jpg)
 
-3. Com a programação carregada e o pH fora da faixa, o LED deve começar a piscar.
+3. Conecte o cátodo (perna curta) ao barramento negativo da protoboard com um jumper fêmea-macho.
 
-![Atuador LED](Imagens/Img6.jpg)
+4. Com a programação carregada e o pH fora da faixa, o LED deve começar a piscar.
+
