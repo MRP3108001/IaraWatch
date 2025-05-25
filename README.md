@@ -259,6 +259,54 @@ Arquivo `.bat` que:
 - Executa o script `monitorar_ph.py`
 ___
 
+## Interfaces e Protocolos de Comunicação
+
+### 🔗 Comunicação entre módulos
+
+- **ATmega328P → ESP8266:** Comunicação serial UART via USB interna da placa Uno R3 com DIP Switch (configuração: SW1 e SW2 ON).
+- **ESP8266 → Servidor MQTT:** Comunicação via Wi-Fi (protocolo TCP/IP).
+- **Protocolo MQTT:** Utilizado para publicação dos dados no tópico `pH/valor` no broker Mosquitto.
+
+### 📶 Tópico utilizado:
+
+As mensagens MQTT publicadas pelo ESP8266 seguem o seguinte padrão:
+
+- **Tópico:** `pH/valor`
+- **Formato da mensagem (payload):**
+  
+<tensao>;<ph>;<tempo_LED>;<timestamp>
+
+- **Exemplo de publicação:**
+
+2.654;7.05;0;1748
+
+- **Detalhamento dos campos:**
+
+- `tensao`: valor lido do sensor em volts (float com 3 casas decimais)
+- `ph`: valor calculado de pH (float com 2 casas decimais)
+- `tempo_LED`: tempo de reação do LED (em milissegundos)
+- `timestamp`: horário do envio, obtido via NTP, em formato Unix Time (segundos desde 01/01/1970)
+
+Esse tópico pode ser monitorado com o comando no terminal (se Mosquitto estiver instalado):
+
+bash
+mosquitto_sub -h localhost -t "pH/valor" -v
+
+### 💻 Broker:
+- **Software:** Eclipse Mosquitto
+- **Servidor local:** IP (conforme ip atribuído da máquina ao qual está usando)
+- **Porta:** 1883 (TCP) - porta padrão
+
+### 🧩 Bibliotecas utilizadas:
+
+- `ESP8266WiFi.h`: conexão com a rede
+- `PubSubClient.h`: comunicação MQTT
+- `Wire.h`: protocolo I2C para o display LCD
+- `LiquidCrystal_I2C.h`: controle do LCD 16x2
+- `NTPClient.h`: sincronização de tempo via internet
+
+___
+
 ## **Montar Componentes Físicos:**
 
 ### 🔌 **Etapa 1 – Alimentação da placa e distribuição para a protoboard**
