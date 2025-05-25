@@ -22,5 +22,9 @@ A) Placa Arduino Uno WiFi (ATmega328P + ESP8266)
 
 A placa Arduino Uno WiFi combina o microcontrolador ATmega328P com o módulo Wi-Fi ESP8266, permitindo conectividade sem fio e controle de dispositivos via internet. Possui 14 pinos digitais (6 com PWM), 6 entradas analógicas, cristal de 16 MHz e interface USB-TTL CH340G. A comunicação entre o ATmega328P e o ESP8266 é configurável por meio de DIP switches, permitindo flexibilidade na programação e na comunicação serial.
 
-![Placa Arduino Uno WiFi (ATmega328P + ESP8266)](Assets/Arduino.jpg) ![Diagrama Arduino Uno WiFi (ATmega328P + ESP8266)](Assets/Arduino_ESP_Pins.jpg)
+![Placa Arduino Uno WiFi (ATmega328P + ESP8266)](Assets/Arduino.jpg) 
+
+Diagrama Arduino Uno WiFi (ATmega328P + ESP8266)
+
+![Diagrama Arduino Uno WiFi (ATmega328P + ESP8266)](Assets/Arduino_ESP_Pins.jpg)
 
