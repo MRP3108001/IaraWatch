@@ -240,8 +240,9 @@ Essa estrutura de comunicação MQTT contribuiu diretamente para a escalabilidad
 
  - Conecte o pino GND do Arduino ao barramento negativo da protoboard (linha azul/preta).
 
-
 3. Isso garante que a protoboard esteja alimentada com os mesmos 5V do Arduino.
+
+___
 
 ### 🔧 **Etapa 2 – Configuração das chaves DIP**
 
