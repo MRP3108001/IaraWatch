@@ -1,4 +1,4 @@
-# IaraWatch pH Monitor – Arduino + ESP8266 + MQTT
+# **IaraWatch pH Monitor – Arduino + ESP8266 + MQTT**
 
 IARAWATCH é um sistema de monitoramento de qualidade da água baseado em Arduino, projetado para medir e transmitir valores de pH em tempo real. O projeto utiliza dois microcontroladores — ATmega328P (Arduino UNO) e ESP8266 — que atuam em conjunto: o ATmega realiza a leitura analógica do sensor de pH e controla o LED (atuador), enquanto o ESP8266 se conecta à rede Wi-Fi e envia os dados via protocolo MQTT para um broker local (Mosquitto).
 
@@ -243,7 +243,7 @@ Essa estrutura de comunicação MQTT contribuiu diretamente para a escalabilidad
 
 3. Isso garante que a protoboard esteja alimentada com os mesmos 5V do Arduino.
 
-### 🔧 Etapa 2 – Configuração das chaves DIP
+### 🔧 **Etapa 2 – Configuração das chaves DIP**
 
 ![Configuração das chaves DIP](Imagens/Img2.jpg)
 
