@@ -225,3 +225,21 @@ Instalado localmente no computador, o Mosquitto foi responsável por:
 A configuração envolveu definir a porta padrão 1883, criar um tópico principal (pH/valor) e validar os envios por meio de ferramentas como mosquitto_sub, garantindo assim um canal de comunicação eficiente e confiável para o monitoramento dos parâmetros do sistema em tempo real.
 
 Essa estrutura de comunicação MQTT contribuiu diretamente para a escalabilidade e a reatividade do projeto IaraWatch.
+
+## Montar Componentes Físicos:
+
+### 🔌 Etapa 1 – Alimentação da placa e distribuição para a protoboard
+
+1. Conecte a fonte bivolt 9V 1A Plug P4 na entrada P4 fêmea da placa Arduino Uno WiFi.
+
+2. Com dois jumpers macho-macho (um vermelho e um azul):
+
+- Conecte o pino 5V do Arduino ao barramento positivo da protoboard (linha vermelha).
+
+- Conecte o pino GND do Arduino ao barramento negativo da protoboard (linha azul/preta).
+
+3. Isso garante que a protoboard esteja alimentada com os mesmos 5V do Arduino.
+
+### 🔧 Etapa 2 – Configuração das chaves DIP
+
+
