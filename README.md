@@ -311,6 +311,24 @@ Exemplo:  mosquitto_sub -h 192.168.15.99 -t "pH/valor" -v
 
 ___
 
+## Conectividade via TCP/IP e MQTT
+
+O sistema conecta-se a uma rede Wi-Fi local e estabelece comunicação com um servidor MQTT local (Mosquitto) utilizando o protocolo **MQTT sobre TCP/IP**.
+
+![Conexão Fonte P4](Imagens/Img1.jpg)
+
+A estrutura garante:
+- Monitoramento remoto dos valores de pH
+- Registro dos dados em tempo real
+- Baixa latência de comunicação entre sensor e aplicação
+
+A comunicação acontece via:
+
+- **Protocolo TCP/IP**: entre ESP8266 e o broker
+- **Protocolo MQTT**: para envio leve de mensagens usando o padrão Pub/Sub
+
+___
+
 ## **Montar Componentes Físicos:**
 
 ### 🔌 **Etapa 1 – Alimentação da placa e distribuição para a protoboard**
