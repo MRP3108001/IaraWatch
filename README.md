@@ -248,15 +248,29 @@ Firmware do ESP8266 que:
 - Exibe informações no display LCD I2C
 
 ### 📂 `monitorar_ph.py` (Deve ser adaptado conforme diretório ao qual salvar esse arquivo)
-Script Python para:
-- Escutar as publicações MQTT
-- Calcular tempo de resposta do LED e tempo de envio via MQTT
-- Exibir os dados em tempo real e calcular médias
 
-### 📂 `start_mosquitto_monitoramento.bat` (Deve ser adaptado conforme diretório ao qual salvar esse arquivo)
+Esse script Python foi desenvolvido para monitorar em tempo real apenas o valor de pH publicado via MQTT no tópico pH/#, utilizando o utilitário mosquitto_sub.
+
+O que ele faz:
+- Executa o comando mosquitto_sub como subprocesso para se inscrever no tópico pH/#;
+- Escuta continuamente os dados recebidos;
+- Extrai apenas o valor de pH do payload;
+- Exibe no terminal a data, hora e valor de pH no formato:
+
+[dd/mm/aaaa HH:MM:SS] pH: <valor>
+
+⚙️ Dependências:
+
+- Python 3 instalado e acessível via terminal;
+
+- Mosquitto (com mosquitto_sub.exe) instalado no caminho padrão:
+C:\Program Files\mosquitto\mosquitto_sub.exe
+
+### 📂 `Monitorar_pH.bat` (Deve ser adaptado conforme diretório ao qual salvar esse arquivo)
+
 Arquivo `.bat` que:
 - Inicia o broker Mosquitto
-- Executa o script `monitorar_ph.py`
+- Executa o script `monitorar_ph.py` exibindo os valores de pH em tempo real
 ___
 
 ## Interfaces e Protocolos de Comunicação
