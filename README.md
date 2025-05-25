@@ -279,10 +279,12 @@ ___
 ![LCD Conectado a ESP e Protoboard](Imagens/Img5.jpg)
 ___
 
-###💡 **Etapa 4 – Conexão e validação do atuador LED**
+### 💡 **Etapa 4 – Conexão e validação do atuador LED**
 
 1. Conecte o ânodo (perna longa) do LED ao pino digital D9 do Arduino.
 
 2. Conecte o cátodo (perna curta) ao barramento negativo da protoboard com um jumper fêmea-macho.
 
 3. Com a programação carregada e o pH fora da faixa, o LED deve começar a piscar.
+
+![Atuador LED](Imagens/Img6.jpg)
