@@ -4,15 +4,15 @@ IARAWATCH é um sistema de monitoramento de qualidade da água baseado em Arduin
 
 Os dados enviados incluem:
 
-  - Valor de tensão lido do sensor,
+- Valor de tensão lido do sensor,
 
-  - Valor de pH convertido via fórmula calibrada,
+- Valor de pH convertido via fórmula calibrada,
 
-  - Tempo de reação do LED, caso o pH esteja fora da faixa segura (6.5–8.5),
+- Tempo de reação do LED, caso o pH esteja fora da faixa segura (6.5–8.5),
 
-  - Timestamp da leitura, sincronizado com um servidor NTP (hora UTC-3).
+- Timestamp da leitura, sincronizado com um servidor NTP (hora UTC-3).
 
-  - O sistema exibe os dados em um display LCD 16x2 e também pode ser monitorado por um script Python que calcula automaticamente o tempo médio de resposta do atuador e da comunicação MQTT.
+- O sistema exibe os dados em um display LCD 16x2 e também pode ser monitorado por um script Python que calcula automaticamente o tempo médio de resposta do atuador e da comunicação MQTT.
 
 Este projeto foi pensado para ser acessível, modular e didático, permitindo que estudantes, pesquisadores ou entusiastas em automação e IoT possam reproduzi-lo com facilidade utilizando componentes comuns e de baixo custo.
 
