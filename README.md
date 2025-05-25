@@ -137,3 +137,34 @@ Este componente torna visível e imediata a resposta do sistema às medições d
 - Vida útil: 50.000 horas
 - Ângulo de abertura: 120°
 - Cor: Vermelho difuso
+
+### F) Cabos Jumper Fêmea/Macho, Macho/Macho e Fêmea/Fêmea
+
+![Cabos Jumper Fêmea/Macho, Macho/Macho e Fêmea/Fêmea](Imagens/Jumpers.jpg)
+
+Os cabos jumper são essenciais para realizar conexões rápidas entre sensores, microcontroladores e módulos em uma protoboard, eliminando a necessidade de solda durante a fase de prototipagem. O projeto utiliza três tipos principais:
+
+- Fêmea/Macho: utilizados para conectar o ESP8266 (pinos do tipo header) diretamente à protoboard;
+
+- Macho/Macho: usados para ligações entre a protoboard e pinos do Arduino;
+
+- Fêmea/Fêmea: utilizados em conexões diretas entre módulos com pinos do tipo macho, como o display LCD e o sensor de pH.
+
+Composição utilizada no projeto:
+
+- 6x cabos jumper Fêmea/Macho
+
+- 2x cabos jumper Macho/Macho
+
+- 2x cabos jumper Fêmea/Fêmea
+
+#### Especificações dos Jumpers:
+
+- Modelo: MJ20-30
+- Tipo: Fios flexíveis
+- Bitola: 24 AWG
+- Cores: Sortidas
+- Comprimento: 20 cm
+- Tipos inclusos: fêmea x fêmea, macho x fêmea, macho x macho
+- Aplicação: Compatíveis com Arduino, ESP8266, sensores e módulos
+
