@@ -16,15 +16,15 @@ Os dados enviados incluem:
 
 Este projeto foi pensado para ser acessível, modular e didático, permitindo que estudantes, pesquisadores ou entusiastas em automação e IoT possam reproduzi-lo com facilidade utilizando componentes comuns e de baixo custo.
 
-## Hardware e Itens Auxiliares Utilizados:
+## **Hardware e Itens Auxiliares Utilizados:**
 
-### A) Placa Arduino Uno WiFi (ATmega328P + ESP8266)
+### **A) Placa Arduino Uno WiFi (ATmega328P + ESP8266)**
 
 A placa Arduino Uno WiFi combina o microcontrolador ATmega328P com o módulo Wi-Fi ESP8266, permitindo conectividade sem fio e controle de dispositivos via internet. Possui 14 pinos digitais (6 com PWM), 6 entradas analógicas, cristal de 16 MHz e interface USB-TTL CH340G. A comunicação entre o ATmega328P e o ESP8266 é configurável por meio de DIP switches, permitindo flexibilidade na programação e na comunicação serial.
 
 ![Placa Arduino Uno WiFi (ATmega328P + ESP8266)](Assets/Arduino.jpg) 
 
-#### Especificações Arduino Uno WiFi (ATmega328P + ESP8266):
+#### **Especificações Arduino Uno WiFi (ATmega328P + ESP8266):**
 
 - Modelo: Placa Uno Wifi Atmega328P;
 - Alimentação Jack P4: 6-9VDC;
@@ -44,7 +44,7 @@ A placa Arduino Uno WiFi combina o microcontrolador ATmega328P com o módulo Wi-
 - Dimensões (CxLxE): 68x53x10mm;
 - Peso: 22g.
 
-### B) Sensor de pH PH-4502C
+### **B) Sensor de pH PH-4502C**
 
 ![Sensor PH-4502C](Imagens/PH-4502C.jpg) 
 
@@ -52,7 +52,7 @@ O sensor de pH PH-4502C é utilizado para medir o nível de acidez ou alcalinida
 
 Neste projeto, o sensor é o responsável pela coleta do valor de pH da água, enviando os dados ao ATmega328P, que realiza a conversão e posterior transmissão ao módulo ESP8266 para exibição e monitoramento via MQTT.
 
-#### Especificações PH-4502C:
+#### **Especificações PH-4502C:**
 
 - Modelo: PH-4502C;
 - Tensão de aquecimento: 5 ±0.2V (AC/DC);
@@ -73,7 +73,7 @@ Neste projeto, o sensor é o responsável pela coleta do valor de pH da água, e
 - Peso: 75g;
 - Peso com embalagem: 85g.
 
-### C) Display LCD 16x2 com Interface I2C
+### **C) Display LCD 16x2 com Interface I2C**
 
 ![Display LCD 16x2 com Interface I2C](Imagens/DisplayLCD.jpg) 
 
@@ -81,7 +81,7 @@ O display LCD 16x2 com interface I2C é utilizado neste projeto para exibição 
 
 Além disso, o módulo conta com retroiluminação azul, caracteres brancos e ajuste de contraste via potenciômetro integrado, o que garante boa visualização em ambientes com pouca luz, mesmo quando o sistema estiver sem conexão com o servidor.
 
-#### Especificações LCD 16x2 I2C:
+#### **Especificações LCD 16x2 I2C:**
 
 - Modelo: DFR0063
 - Tipo de Display: Alfanumérico (16 caracteres por 2 linhas)
@@ -96,7 +96,7 @@ Além disso, o módulo conta com retroiluminação azul, caracteres brancos e aj
 - Dimensões: 80 x 36 x 20 mm
 - Compatibilidade: Arduino UNO, Mega, Nano e similares
 
-### D) Protoboard
+### **D) Protoboard**
 
 ![Protoboard 400 pontos](Imagens/Protoboard.jpg)
 
@@ -104,7 +104,7 @@ A protoboard é amplamente utilizada na fase de prototipagem do projeto, permiti
 
 Sua estrutura conta com trilhas verticais e horizontais, barramentos laterais de alimentação (positiva e negativa) e furos que suportam cabos jumper padrão. No projeto, ela é responsável por distribuir a alimentação fornecida pelo Arduino para o display, sensor de pH e LED, de maneira modular e segura.
 
-#### Especificações Técnicas Protoboard 400 Pontos:
+#### **Especificações Técnicas Protoboard 400 Pontos:**
 
 - Protoboard 400 Pontos Solderless Breadboard
 - Modelo: Solderless Breadboard
@@ -120,7 +120,7 @@ Sua estrutura conta com trilhas verticais e horizontais, barramentos laterais de
 - Tamanho: 82mm Comprimento x 55mm Largura x 10mm de Altura
 - Peso: 43g
 
-### E) LED Difuso 5mm
+### **E) LED Difuso 5mm**
 
 ![Protoboard 400 pontos](Imagens/LED.jpg)
 
@@ -128,7 +128,7 @@ O LED difuso de 5mm é utilizado como atuador visual no projeto. Ele acende semp
 
 Este componente torna visível e imediata a resposta do sistema às medições do sensor de pH, sendo essencial para testes de tempo de reação e validação do funcionamento do atuador.
 
-#### Especificações Técnicas do LED Difuso 5mm:
+#### **Especificações Técnicas do LED Difuso 5mm:**
 
 - Tamanho: 5 mm
 - Tensão de operação: 2.0 ~ 2.21 V
@@ -138,7 +138,7 @@ Este componente torna visível e imediata a resposta do sistema às medições d
 - Ângulo de abertura: 120°
 - Cor: Vermelho difuso
 
-### F) Cabos Jumper Fêmea/Macho, Macho/Macho e Fêmea/Fêmea
+### **F) Cabos Jumper Fêmea/Macho, Macho/Macho e Fêmea/Fêmea**
 
 ![Cabos Jumper Fêmea/Macho, Macho/Macho e Fêmea/Fêmea](Imagens/Jumpers.jpg)
 
@@ -158,7 +158,7 @@ Composição utilizada no projeto:
 
 - 2x cabos jumper Fêmea/Fêmea
 
-#### Especificações dos Jumpers:
+#### **Especificações dos Jumpers:**
 
 - Modelo: MJ20-30
 - Tipo: Fios flexíveis
@@ -168,7 +168,7 @@ Composição utilizada no projeto:
 - Tipos inclusos: fêmea x fêmea, macho x fêmea, macho x macho
 - Aplicação: Compatíveis com Arduino, ESP8266, sensores e módulos
 
-### G) Fonte Bivolt 100–240V 9V 1A Plug P4
+### **G) Fonte Bivolt 100–240V 9V 1A Plug P4**
 
 ![Fonte Bivolt 100–240V 9V 1A Plug P4](Imagens/Fonte_P4.jpg)
 
@@ -176,7 +176,7 @@ A Fonte Bivolt 9V 1A com plug P4 é utilizada no projeto como a principal respon
 
 Neste projeto, a fonte é conectada diretamente à porta fêmea P4 da placa Arduino, garantindo uma alimentação estável e contínua para todos os componentes conectados à protoboard por meio do microcontrolador.
 
-#### Especificações da Fonte Bivolt 100–240V 9V 1A Plug P4:
+#### **Especificações da Fonte Bivolt 100–240V 9V 1A Plug P4:**
 
 - Modelo: KDL-121000
 - Tipo: AC/DC
@@ -190,9 +190,9 @@ Neste projeto, a fonte é conectada diretamente à porta fêmea P4 da placa Ardu
 - Dimensões: 75mm (C) x 28mm (L) x 78mm (A)
 - Peso: 61g
 
-## Software IDE e Broker MQTT:
+## **Software IDE e Broker MQTT:**
 
-### Arduino IDE
+### **Arduino IDE**
 
 ![Arduino IDE](Imagens/ArduinoIDE.jpg)
 
@@ -208,7 +208,7 @@ Para o desenvolvimento do firmware embarcado, foi utilizada a Arduino IDE, uma p
 
 Essa interface simplificada e compatível com múltiplos sistemas operacionais (Windows, macOS e Linux) contribuiu para uma experiência de desenvolvimento fluida e confiável durante todas as etapas do projeto.
 
-### Mosquitto Broker MQTT
+### **Mosquitto Broker MQTT**
 
 ![Mosquitto Broker MQTT](Imagens/MosquittoBrokerMQTT.jpg)
 
@@ -226,9 +226,9 @@ A configuração envolveu definir a porta padrão 1883, criar um tópico princip
 
 Essa estrutura de comunicação MQTT contribuiu diretamente para a escalabilidade e a reatividade do projeto IaraWatch.
 
-## Montar Componentes Físicos:
+## **Montar Componentes Físicos:**
 
-### 🔌 Etapa 1 – Alimentação da placa e distribuição para a protoboard
+### 🔌 **Etapa 1 – Alimentação da placa e distribuição para a protoboard**
 
 ![Conexão Fonte P4](Imagens/Img1.jpg)
 
