@@ -280,17 +280,21 @@ As mensagens MQTT publicadas pelo ESP8266 seguem o seguinte padrão:
 
 2.654;7.05;0;1748
 
-- **Detalhamento dos campos:**
+**Detalhamento dos campos:**
 
 - `tensao`: valor lido do sensor em volts (float com 3 casas decimais)
 - `ph`: valor calculado de pH (float com 2 casas decimais)
 - `tempo_LED`: tempo de reação do LED (em milissegundos)
 - `timestamp`: horário do envio, obtido via NTP, em formato Unix Time (segundos desde 01/01/1970)
 
-Esse tópico pode ser monitorado com o comando no terminal (se Mosquitto estiver instalado):
+**Esse tópico pode ser monitorado com o comando no terminal (se Mosquitto estiver instalado):**
 
 bash
 mosquitto_sub -h localhost -t "pH/valor" -v
+
+**Ou, se o broker estiver em outra máquina da rede:**
+
+Exemplo:  mosquitto_sub -h 192.168.15.99 -t "pH/valor" -v
 
 ### 💻 Broker:
 - **Software:** Eclipse Mosquitto
