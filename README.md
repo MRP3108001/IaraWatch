@@ -377,8 +377,7 @@ A placa UNO R3 WiFi com chip ATmega328P + ESP8266 possui 7 chaves DIP que contro
 
 1. Use um palito ou objeto fino para ajustar as chaves DIP da placa.
 
-SW1	SW2	SW3	SW4	SW5	SW6	SW7
-OFF	OFF	ON	ON	OFF	OFF	OFF
+![Configuração das chaves DIP](Imagens/Img18.jpg)
 
 2. Configure o Modo Upload para o ATmega328P (via Arduino IDE)
 
@@ -391,8 +390,7 @@ Porta COM: a que aparece com conexão USB ao conectar a placa
 
 1. Use um palito ou objeto fino para ajustar as chaves DIP da placa.
 
-SW1	SW2	SW3	SW4	SW5	SW6	SW7
-OFF	OFF	OFF	OFF	ON	ON	ON
+![Configuração das chaves DIP](Imagens/Img17.jpg)
 
 2. Configure o Modo Upload para o ESP8266 (via Arduino IDE)
 
